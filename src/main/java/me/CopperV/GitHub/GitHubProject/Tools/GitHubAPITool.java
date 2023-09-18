@@ -31,8 +31,6 @@ public class GitHubAPITool {
 			String token = this.properties.getToken();
 			headers.set("Authorization", "Bearer "+token);
 		}
-		System.out.println("Test1 "+headers.toString());
-		
 		requestEntity = new HttpEntity<>(headers);
 	}
 
