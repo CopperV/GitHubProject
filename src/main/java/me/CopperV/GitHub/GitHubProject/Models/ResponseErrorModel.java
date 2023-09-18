@@ -1,11 +1,12 @@
 package me.CopperV.GitHub.GitHubProject.Models;
 
 import lombok.Builder;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
 @Getter
 @Builder
+@EqualsAndHashCode
 public class ResponseErrorModel extends AModel {
 
 	private int status;

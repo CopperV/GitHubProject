@@ -1,9 +1,12 @@
 package me.CopperV.GitHub.GitHubProject.Models.DTO;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import me.CopperV.GitHub.GitHubProject.Models.AModel;
 
 @Getter
+@Builder
 public class GitHubRepoReadModel extends AModel {
 
 	private int id;
@@ -13,7 +16,8 @@ public class GitHubRepoReadModel extends AModel {
 	private RepoOwner owner;
 	
 	@Getter
-	public class RepoOwner {
+	@AllArgsConstructor
+	public static class RepoOwner {
 		private String login;
 		private long id;
 	}
